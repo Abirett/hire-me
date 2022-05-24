@@ -5,6 +5,8 @@
       <title>Hire Me- A.H. Abir | Executing The Web</title>
       <link rel="icon" href="images/icon.png" type="image/x-icon">
       <link rel="stylesheet" href="css/style.css">
+      <!-- Fontawesome CDN Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
       <meta name="title" content="Hire Me - A.H. Abir | Executing The Code">
       <meta name="description" content="I'm Ashfaque Hossain Abir, a Web Developer, Graphic Designer and Content Writer based in Bangladesh. I love to provide awesome services to my lovely clients. Hire me now!">
       <meta property="og:image" content="images/preview.png" />
@@ -16,49 +18,46 @@
    </head>
    <body>
     <div class="container">
-        <div class="text">Contact Me for hire</div>
-        <form action="https://formspree.io/f/xrgjrjgn"
-  method="POST">
-           <div class="form-row">
-              <div class="input-data">
-                 <input type="text" name="text" required>
-                 <div class="underline"></div>
-                 <label for="">First Name</label>
-              </div>
-              <div class="input-data">
-                 <input type="text" name="text" required>
-                 <div class="underline"></div>
-                 <label for="">Last Name</label>
-              </div>
-           </div>
-           <div class="form-row">
-              <div class="input-data">
-                 <input type="email" name="email" required>
-                 <div class="underline"></div>
-                 <label for="">Email Address</label>
-              </div>
-              <div class="input-data">
-                 <input type="text" name="text" required>
-                 <div class="underline"></div>
-                 <label for="">Subject</label>
-              </div>
-           </div>
-           <div class="form-row">
-              <div class="input-data textarea">
-                 <textarea rows="8" cols="80" name="message" required></textarea>
-                 <br />
-                 <div class="underline"></div>
-                 <label for="">Write your message</label>
-                 <br />
-                 <div class="form-row submit-btn">
-                    <div class="input-data">
-                       <div class="inner"></div>
-                       <input type="submit" value="submit">
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </form>
-     </div>
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Malibag (First Lane)</div>
+          <div class="text-two">Dhaka, Bangladesh</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+8801788420386</div>
+          <div class="text-two">+8801627862089</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one"><a href="mailto:ashfaquehossain100@gmail.com">ashfaquehossain100@gmail.com</a></div>
+          <div class="text-two"><a href="mailto:ashfaqueabir100@gmail.com">ashfaqueabir100@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send me a message</div>
+        <p>If you have any project to hire me, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="https://formspree.io/f/xrgjrjgn" method="POST">
+        <div class="input-box">
+          <input type="text" name="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <textarea name="message" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
    </body>
 </html>
