@@ -1,157 +1,162 @@
-/* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: 'Poppins',sans-serif;
 }
 body{
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-  background: rgb(235, 69, 102);
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fae9fb;
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+  clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
 }
 .container{
-  width: 85%;
+  z-index: 12;
+  max-width: 1050px;
+  width: 100%;
   background: #fff;
-  border-radius: 18px;
-  padding: 20px 60px 30px 40px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .container .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 25px 20px;
 }
-.container .content .left-side{
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-  position: relative;
+.content .image-box{
+  max-width: 55%;
 }
-.content .left-side::before{
-  content: '';
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: crimson;
+.content .image-box img{
+  width: 100%;
 }
-.content .left-side .details{
-  margin: 14px;
-  text-align: center;
-}
-.content .left-side .details i{
-  font-size: 30px;
-  color: crimson;
-  margin-bottom: 10px;
-}
-.content .left-side .details .topic{
-  font-size: 18px;
+.content .topic{
+  font-size: 22px;
   font-weight: 500;
-}
-.content .left-side .details .text-one,
-.content .left-side .details .text-two{
-  font-size: 14px;
   color: crimson;
 }
-
-
-.container .content .right-side{
-  width: 75%;
-  margin-left: 75px;
+.content form{
+  width: 40%;
+  margin-right: 30px;
 }
-.content .right-side .topic-text{
-  font-size: 23px;
-  font-weight: 600;
-  color: crimson;
-}
-.right-side .input-box{
+.content .input-box{
   height: 50px;
   width: 100%;
-  margin: 12px 0;
+  margin: 16px 0;
+  position: relative;
 }
-.right-side .input-box input,
-.right-side .input-box textarea{
+.content .input-box input{
+  position: absolute;
   height: 100%;
   width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: #F0F1F8;
   border-radius: 6px;
-  padding: 0 15px;
-  resize: none;
-}
-.right-side .message-box{
-  min-height: 110px;
-}
-.right-side .input-box textarea{
-  padding-top: 6px;
-}
-.right-side .button{
-  display: inline-block;
-  margin-top: 12px;
-}
-.right-side .button input[type="button"]{
-  color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 25px;
-  background: crimson;
-  cursor: pointer;
+  padding-left: 16px;
+  background: #fae9fb;
+  border: 2px solid transparent;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
-  background: rgb(240, 54, 91);
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: crimson;
+  background-color: #fff;
 }
-
-a {
-  text-decoration: none;
-  color:crimson;
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: crimson;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
 }
-
-@media (max-width: 950px) {
-  .container{
-    width: 90%;
-    padding: 30px 40px 40px 35px ;
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: crimson;
+  background: #fff;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color: crimson;
+  background-color: #fff;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: crimson;
+  font-size: 14px;
+  background: #fff;
+}
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: crimson;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: rgb(223, 81, 109);
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
   }
-  .container .content .right-side{
-   width: 75%;
-   margin-left: 55px;
-}
-}
-@media (max-width: 820px) {
-  .container{
-    margin: 40px 0;
-    height: 100%;
+  .content{
+    padding: 10px 0;
   }
-  .container .content{
-    flex-direction: column-reverse;
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
   }
- .container .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container .content .left-side::before{
-   display: none;
- }
- .container .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
 }
