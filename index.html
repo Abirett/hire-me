@@ -19,45 +19,27 @@
    <body>
     <div class="container">
     <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Malibag (First Lane)</div>
-          <div class="text-two">Dhaka, Bangladesh</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+8801788420386</div>
-          <div class="text-two">+8801627862089</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one"><a href="mailto:ashfaquehossain100@gmail.com">ashfaquehossain100@gmail.com</a></div>
-          <div class="text-two"><a href="mailto:ashfaqueabir100@gmail.com">ashfaqueabir100@gmail.com</a></div>
-        </div>
+      <div class="image-box">
+      <img src="contact.png" alt="contact">
       </div>
-      <div class="right-side">
-        <div class="topic-text">Send me a message</div>
-        <p>If you have any project to hire me, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="https://formspree.io/f/xrgjrjgn" method="POST">
-        <div class="input-box">
-          <input type="text" name="text" placeholder="Enter your name" required>
-        </div>
-        <div class="input-box">
-          <input type="email" name="email" placeholder="Enter your email" required>
-        </div>
-        <div class="input-box message-box">
-          <textarea name="message" placeholder="Enter your message" required></textarea>
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
-    </div>
+    <form action="https://formspree.io/f/xrgjrjgn" method="POST">
+      <div class="topic">Send me a message</div>
+      <div class="input-box">
+        <input type="text" name="text" required>
+        <label>Enter your name</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="message-box">
+        <textarea name="message" placeholder="Enter your message" required></textarea>
+      </div>
+      <div class="input-box">
+        <input type="submit" value="Send Message">
+      </div>
+    </form>
+  </div>
   </div>
    </body>
 </html>
