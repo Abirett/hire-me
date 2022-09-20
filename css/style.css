@@ -11,7 +11,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fae9fb;
+  background: rgb(232, 244, 255);
   position: relative;
 }
 body::before{
@@ -21,7 +21,7 @@ body::before{
   width: 100%;
   left: 0;
   top: 0;
-  background: crimson;
+  background: dodgerblue;
   clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
 }
 .container{
@@ -48,7 +48,7 @@ body::before{
 .content .topic{
   font-size: 22px;
   font-weight: 500;
-  color: crimson;
+  color: dodgerblue;
 }
 .content form{
   width: 40%;
@@ -68,20 +68,20 @@ body::before{
   font-size: 16px;
   outline: none;
   padding-left: 16px;
-  background: #fae9fb;
+  background: rgb(232, 244, 255);
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
 .content .input-box input:focus,
 .content .input-box input:valid{
-  border-color: crimson;
+  border-color: dodgerblue;
   background-color: #fff;
 }
 .content .input-box label{
   position: absolute;
   left: 18px;
   top: 50%;
-  color: crimson;
+  color: dodgerblue;
   font-size: 15px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -92,7 +92,7 @@ body::before{
   top: 0;
   left: 12px;
   display: 14px;
-  color: crimson;
+  color: dodgerblue;
   background: #fff;
 }
 .content .message-box{
@@ -104,14 +104,14 @@ body::before{
   height: 100%;
   width: 100%;
   resize: none;
-  background: #fae9fb;
+  background: rgb(232, 244, 255);
   border: 2px solid transparent;
   border-radius: 6px;
   outline: none;
   transition: all 0.3s ease;
 }
 .content .message-box textarea:focus{
-  border-color: crimson;
+  border-color: dodgerblue;
   background-color: #fff;
 }
 .content .message-box label{
@@ -126,13 +126,13 @@ body::before{
 .content .message-box textarea:focus ~ label{
   left: 12px;
   top: -10px;
-  color: crimson;
+  color: dodgerblue;
   font-size: 14px;
   background: #fff;
 }
 .content .input-box input[type="submit"]{
   color: #fff;
-  background: crimson;
+  background: dodgerblue;
   padding-left: 0;
   font-size: 18px;
   font-weight: 500;
@@ -141,7 +141,7 @@ body::before{
   transition: all 0.3s ease;
 }
 .content .input-box input[type="submit"]:hover{
-  background-color: rgb(223, 81, 109);
+  background-color: rgb(78, 166, 255);
 }
 @media (max-width:1000px) {
   .content .image-box{
